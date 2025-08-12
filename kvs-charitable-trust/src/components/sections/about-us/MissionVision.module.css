@@ -1,0 +1,188 @@
+.missionVision {
+  padding: 84px 0;
+  background: #FAFAFA;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.grid {
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+.missionCard {
+  flex: 1;
+  max-width: 1200px; 
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  border-radius: 21px;
+  padding: 34px 35px 35px 35px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+}
+
+.visionCard {
+  flex: 1;
+  max-width: 1200px;
+  background: var(--gradient-blue);
+  border-radius: 21px;
+  padding: 34px 35px 35px 35px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+}
+
+.cardHeader {
+  margin-bottom: 21px;
+}
+
+.icon {
+  font-size: 52.5px;
+  line-height: 52.5px;
+  color: #171717;
+}
+
+.visionCard .icon {
+  color: #fff;
+}
+
+.cardTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 100%;
+  color: #004080;
+  margin-bottom: 20px;
+}
+
+.visionCard .cardTitle {
+  color: #fff;
+}
+
+.cardDescription {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.75px;
+  color: #404040;
+  margin-bottom: 35px;
+}
+
+.visionCard .cardDescription {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.features {
+  background: #EFF6FF;
+  border-radius: 14px;
+  padding: 21px;
+}
+
+.visionFeatures {
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 14px;
+  padding: 21px;
+  backdrop-filter: blur(4px);
+}
+
+.featuresTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39.2px;
+  color: #004080;
+  margin-bottom: 14px;
+}
+
+.visionFeaturesTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39.2px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.visionFeaturesList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10.5px;
+}
+
+.visionFeature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10.5px;
+}
+
+.bullet {
+  color: #004080;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  flex-shrink: 0;
+}
+
+.visionBullet {
+  color: #F8B03C;
+  font-size: 18px;
+  line-height: 28px;
+  flex-shrink: 0;
+}
+
+.feature span:last-child {
+  color: #404040;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.visionFeature span:last-child {
+  color: rgba(255, 255, 255, 0.9);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 14px;
+    width: 90%;
+  }
+  
+  .grid {
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  .cardTitle {
+    font-size: 36px;
+  }
+  
+  .featuresTitle,
+  .visionFeaturesTitle {
+    font-size: 24px;
+  }
+}

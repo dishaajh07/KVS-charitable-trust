@@ -1,0 +1,273 @@
+.section {
+  padding: 80px 0;
+  background: white;
+}
+
+.container {
+  width: 100%;
+  padding: 0 80px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.titleText {
+  color: #333;
+}
+
+.titleAccent {
+  color: #FF6900;
+}
+
+.subtitle {
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+  padding: 0 16px;
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.additionalPrograms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 60px;
+}
+
+.programCard,
+.additionalCard {
+  border-radius: 24px;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.programCard:hover,
+.additionalCard:hover {
+  transform: translateY(-5px);
+}
+
+.programImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.programHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.programIcon {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.programStat {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+
+.programStat span {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.programContent {
+  color: white;
+}
+
+.programTitle {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.programSubtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.callToAction {
+  background: linear-gradient(180deg, #2F7FED 0.13%, #235AA6 100.04%);
+  border-radius: 24px;
+  padding: 60px 48px;
+  text-align: center;
+  color: white;
+}
+
+.ctaTitle {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ctaSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+  margin-bottom: 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.donateBtn {
+  background: linear-gradient(135deg, #FFCE00 0%, #FF4F81 100%);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 206, 0, 0.3);
+}
+
+.donateBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 206, 0, 0.4);
+}
+
+.workBtn {
+  border: 2px solid white;
+  background: white;
+  color: #333;
+  padding: 16px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.workBtn:hover {
+  background: transparent;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 1024px) {
+  .programsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .additionalPrograms {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 14px;
+  }
+  
+  .title {
+    font-size: 40px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+  }
+  
+  .programsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .additionalPrograms {
+    gap: 24px;
+  }
+  
+  .programCard,
+  .additionalCard {
+    height: 350px;
+  }
+  
+  .programImage {
+    padding: 16px;
+  }
+  
+  .programIcon {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .programTitle {
+    font-size: 28px;
+  }
+  
+  .programSubtitle {
+    font-size: 16px;
+  }
+  
+  .callToAction {
+    padding: 48px 32px;
+  }
+  
+  .ctaTitle {
+    font-size: 32px;
+  }
+  
+  .ctaSubtitle {
+    font-size: 16px;
+  }
+  
+  .ctaActions {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .donateBtn,
+  .workBtn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}

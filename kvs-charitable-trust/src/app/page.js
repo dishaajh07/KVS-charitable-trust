@@ -4,6 +4,10 @@ import Nav from '../components/layout/Nav';
 import Hero from '../components/sections/home/Hero';
 import WhatWeDo from '@/components/sections/home/WhatWeDo';
 
+import Programs from '@/components/sections/home/Programs';
+import CoreValues from '@/components/sections/home/CoreValues';
+import Milestones from '@/components/sections/home/Milestones';
+import QuoteBlock from '@/components/sections/home/QuoteBlock';
 import Faqs from '@/components/sections/home/Faqs';
 import Footer from '../components/layout/footer';
 
@@ -14,6 +18,10 @@ export default function Home() {
 <Hero />
 <WhatWeDo />
 
+<Programs />
+<CoreValues />
+<Milestones />
+<QuoteBlock />
 <Faqs />
 <Footer />
     </div>

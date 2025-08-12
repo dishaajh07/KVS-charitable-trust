@@ -45,7 +45,7 @@
   --gradient-primary: linear-gradient(90deg, #ffce00 0%, #ff4f81 100%);
   --gradient-secondary: linear-gradient(180deg, #ffce00 0%, #ff4f81 100%);
   --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
---gradient-blue: linear-gradient(90deg, #2F7FED 100%, #235AA6 100%);
+--gradient-blue: linear-gradient(180deg, #2F7FED 0%, #235AA6 100%);
 
 }
 

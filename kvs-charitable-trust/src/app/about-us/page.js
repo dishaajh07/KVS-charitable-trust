@@ -2,7 +2,11 @@
 import React from 'react'
 import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
+import MissionVision from '@/components/sections/about-us/MissionVision';
+import JourneyOfHope from '@/components/sections/about-us/JourneyOfHope';
+
 import Footer from '../../components/layout/footer';
+
 
 const page = () => {
   return (
@@ -18,6 +22,8 @@ const page = () => {
         { label: 'What We Do' },
       ]}
     />
+    <MissionVision />
+    <JourneyOfHope />
 <Footer />
     </div>
   )
