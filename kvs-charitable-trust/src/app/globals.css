@@ -1,0 +1,204 @@
+@import "tailwindcss";
+
+:root {
+--primary-color: #ff4f81;
+--secondary-color: #ffce00;
+--royal-blue: #2F7FED;
+--congress-blue: #004080;
+
+  --global-bg-1: #c9faf7;
+  --global-bg-2: #e6ddfe;
+  --global-bg-3: #ffe0e0;
+  --global-bg-4: #fff0cf;
+  --global-bg-5: #ffffff;
+  --global-bg-6: #f8b03c;
+  --global-text-1: #000000;
+  --global-text-2: #2f7fed;
+  --global-text-3: #333333;
+  --global-text-4: #bdbdbd;
+  --global-text-5: #f8b03c;
+  --global-text-6: #ffffff;
+  --global-text-7: #00060c;
+
+/* Header Colors */
+  --header-bg-1: #f8b03c;
+  --header-bg-2: #ff6600;
+  --header-text-1: #ffffff;
+
+  /* Button Colors */
+  --button-text-1: #00060c;
+  --button-text-2: #11112d;
+
+  /* Slider Colors */
+  --slider-bg-1: #00000066;
+  --slider-text-1: #1e1e1e;
+  --slider-text-2: #757575;
+  --slider-text-3: #b3b3b3;
+
+  /* Dropdown Colors */
+  --dropdown-bg-1: #d9d9d9;
+
+  /* Footer Colors */
+  --footer-bg-1: #333333;
+
+  /* Gradient */
+  --gradient-primary: linear-gradient(90deg, #ffce00 0%, #ff4f81 100%);
+  --gradient-secondary: linear-gradient(180deg, #ffce00 0%, #ff4f81 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+--gradient-blue: linear-gradient(90deg, #2F7FED 100%, #235AA6 100%);
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--global-bg-5);
+  color: var(--global-text-3);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;  
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: var(--gradient-primary);
+}
+
+.gradient-border {
+  border: 2px solid transparent;
+  background: var(--gradient-primary);
+  border-radius: 20px;
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: var(--global-bg-5);
+  border-radius: 18px;
+  z-index: -1;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+/* Button Reset */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Link Reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Input Reset */
+input, textarea, select {
+  border: none;
+  outline: none;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Font Sizes */
+.text-sm   { font-size: 0.875rem; }  /* 14px */
+.text-base { font-size: 1rem; }      /* 16px */
+.text-lg   { font-size: 1.125rem; }  /* 18px */
+.text-xl   { font-size: 1.25rem; }   /* 20px */
+.text-2xl  { font-size: 1.5rem; }    /* 24px */
+.text-3xl  { font-size: 1.875rem; }  /* 30px */
+.text-4xl  { font-size: 2.25rem; }   /* 36px */
+.text-5xl  { font-size: 3rem; }      /* 48px */
+
+/* Padding */
+.p-1 { padding: 0.25rem; }  /* 4px */
+.p-2 { padding: 0.5rem; }   /* 8px */
+.p-3 { padding: 0.75rem; }  /* 12px */
+.p-4 { padding: 1rem; }     /* 16px */
+.p-5 { padding: 1.25rem; }  /* 20px */
+.p-6 { padding: 1.5rem; }   /* 24px */
+.p-7 { padding: 1.75rem; } 
+.p-8 { padding: 2rem; }     /* 32px */
+
+/* Margin */
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-3 { margin: 0.75rem; }
+.m-4 { margin: 1rem; }
+.m-5 { margin: 1.25rem; }
+.m-6 { margin: 1.5rem; }
+.m-7 { padding: 1.75rem; } 
+.m-8 { margin: 2rem; }
+
+/* Gap */
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; }
+.gap-4 { gap: 1rem; }
+.gap-5 { gap: 1.25rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+
+@media (min-width: 640px) {
+  .text-sm   { font-size: 0.925rem; }
+  .text-base { font-size: 1.05rem; }
+  .text-lg   { font-size: 1.2rem; }
+  .text-xl   { font-size: 1.35rem; }
+  .text-2xl  { font-size: 1.6rem; }
+  .text-3xl  { font-size: 2rem; }
+  .text-4xl  { font-size: 2.4rem; }
+  .text-5xl  { font-size: 3.2rem; }
+}
+
+@media (min-width: 1024px) {
+  .text-sm   { font-size: 1rem; }
+  .text-base { font-size: 1.125rem; }
+  .text-lg   { font-size: 1.25rem; }
+  .text-xl   { font-size: 1.5rem; }
+  .text-2xl  { font-size: 1.75rem; }
+  .text-3xl  { font-size: 2.25rem; }
+  .text-4xl  { font-size: 2.75rem; }
+  .text-5xl  { font-size: 3.5rem; }
+}
+

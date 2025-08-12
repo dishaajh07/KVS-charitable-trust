@@ -1,0 +1,85 @@
+.wrapper {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 20px 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.60);
+  z-index: 1;
+}
+
+.breadcrumb {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 14px;
+  z-index: 2;
+  color: white;
+}
+
+.breadcrumb span {
+  margin-right: 5px;
+}
+
+.breadcrumb a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.subtitle {
+  color: #f4b942;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+    left: 15px;
+    top: 15px;
+  }
+}

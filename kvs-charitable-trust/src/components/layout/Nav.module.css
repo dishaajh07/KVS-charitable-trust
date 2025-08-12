@@ -1,0 +1,210 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 86px;
+  background: white;
+  border-bottom: 1px solid #dddddd;
+  flex-wrap: wrap;
+  height: auto;
+  position: relative;
+}
+
+.logoWrapper {
+  position: relative;
+  width: 100px;
+  height: 80px;
+}
+
+.logo {
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.active {
+  border-radius: 30px;
+  background: linear-gradient(white, white) padding-box,
+    var(--gradient-primary) border-box;
+  border: 1px solid transparent;
+  color: black;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.callButton {
+  border-image: linear-gradient(to right, #ffb347, #ff0844);
+  border-image-slice: 1;
+  padding: 10px;
+  border-radius: 50%;
+  background: white;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.languageWrapper {
+  display: flex;
+}
+
+.callWrapper {
+  display: flex;
+}
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.burger img {
+  width: 24px;
+  height: 24px;
+}
+
+.mobileControls {
+  display: none;
+}
+
+
+@media (max-width: 1375px) {
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobileControls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .mobileControls .callWrapper,
+  .mobileControls .languageWrapper,
+  .mobileControls .donateWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    display: block;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.711);
+    z-index: 999;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .header.open .nav {
+    display: flex;
+  }
+
+  .actions {
+    display: none !important;
+  }
+
+}
+
+
+@media (max-width: 475px) {
+
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .mobileControls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+
+  .mobileControls .callWrapper,
+  .mobileControls .languageWrapper,
+  .mobileControls .donateWrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger {
+    display: block;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.711);
+    z-index: 999;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .header.open .nav {
+    display: flex;
+  }
+
+  .actions {
+    display: none !important;
+  }
+
+}

@@ -1,0 +1,33 @@
+{
+  "contact": {
+    "title": "Contact us",
+    "items": [
+      {
+        "icon": "location",
+        "text": "Sy. No. 96/3, New Sy. No. 96/4, Hasigala Village, Sulibele Hobli, Hoskote Taluk, Bangalore Rural District."
+      },
+      { "icon": "phone", "text": "+91 8867 148 889" },
+      { "icon": "email", "text": "info@kvstrust.org" }
+    ]
+  },
+  "quickLinks": [
+    "Contact Us",
+    "FAQs",
+    "CSR Partnerships",
+    "Be a Volunteer",
+    "Blogs",
+    "Careers"
+  ],
+  "legalLinks": [
+    "Privacy Policy",
+    "Terms of Use",
+    "Cookie Policy",
+    "Governance Statement"
+  ],
+  "subscribe": {
+    "title": "Subscribe Now",
+    "text": "Do not miss our future updates. Get Subscribe today!"
+  },
+  "copyright": "Copyright © 2025 KVS Charitable Trust. All Rights Reserved."
+}
+
