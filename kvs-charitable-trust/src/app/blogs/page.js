@@ -2,11 +2,13 @@
 import React from 'react'
 import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
+import ArticleCard from '@/components/sections/blogs/ArticleCard';
 import Footer from '../../components/layout/footer';
 
 const page = () => {
   return (
     <div><Nav />
+    <div className="headerSpacer"></div>
 <Banner
       title="What We Do"
       subtitle="Our Programs"
@@ -17,6 +19,7 @@ const page = () => {
         { label: 'What We Do' },
       ]}
     />
+    <ArticleCard />
 <Footer /></div>
   )
 }

@@ -6,8 +6,13 @@
   background: white;
   border-bottom: 1px solid #dddddd;
   flex-wrap: wrap;
-  height: auto;
-  position: relative;
+  height: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .logoWrapper {
@@ -99,6 +104,7 @@
     padding: 12px 24px;
     position: relative;
     z-index: 1000;
+    height: 120px;
   }
 
   .mobileControls {
@@ -153,6 +159,7 @@
 @media (max-width: 475px) {
 
   .header {
+    height: 120px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
