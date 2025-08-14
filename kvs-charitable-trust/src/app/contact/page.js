@@ -3,6 +3,9 @@ import React from 'react'
 import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
 import Footer from '../../components/layout/footer';
+import HowToReachUs from '@/components/sections/contact/ContactForm/HowToReachUs';
+import QuickAnswer from '@/components/sections/contact/QuickAnswer/QuickAnswer';
+import ContactMaps from '@/components/sections/contact/ContactMapSection/ContactMap';
 
 const page = () => {
   return (
@@ -18,6 +21,9 @@ const page = () => {
         { label: 'What We Do' },
       ]}
     />
+    <HowToReachUs />
+    <ContactMaps />
+    <QuickAnswer />
 <Footer /></div>
   )
 }

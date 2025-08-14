@@ -1,0 +1,406 @@
+.contactMapSection {
+  padding: 84px 70px;
+  background: #FFF;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+.formSection {
+  flex: 1;
+}
+
+.formCard {
+  padding: 36px;
+  border-radius: 28px;
+  border: 1px solid #F3F4F6;
+  background: #FFF;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+}
+
+.formTitle {
+  color: #171717;
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 34px;
+  margin: 0 0 28px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.label {
+  color: #364153;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.5px;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  width: 100%;
+  padding: 13.5px 16px 14.5px 16px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #EFF6FF 0%, #ECFEFF 100%);
+  border: none;
+  color: rgba(23, 23, 23, 0.5);
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  appearance: none;
+  cursor: pointer;
+}
+
+.selectIcon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.input {
+  padding: 13.5px 16px 14.5px 16px;
+  border-radius: 14px;
+  border: 2px solid #E5E7EB;
+  background: #FFF;
+  color: #171717;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #155DFC;
+}
+
+.input::placeholder {
+  color: rgba(23, 23, 23, 0.5);
+}
+
+.textarea {
+  padding: 12.5px 16px;
+  border-radius: 14px;
+  border: 2px solid #E5E7EB;
+  background: #FFF;
+  color: #171717;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.3s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #155DFC;
+}
+
+.textarea::placeholder {
+  color: rgba(23, 23, 23, 0.5);
+}
+
+.submitButton {
+  padding: 14px 0;
+  border-radius: 21px;
+  background: linear-gradient(135deg, #155DFC 0%, #193CB8 100%);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  border: none;
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+}
+
+.submitButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.mapSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.mapContainer {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  min-height: 400px;
+  position: relative;
+  background: #f5f5f5;
+}
+
+.mapOverlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.mapCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 28px;
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  text-align: center;
+}
+
+.mapIcon {
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.mapTitle {
+  color: #000;
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 39.2px;
+  margin: 0;
+}
+
+.mapSubtitle {
+  color: rgba(0, 0, 0, 0.9);
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+
+.officeLocations {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.locationsTitle {
+  color: #171717;
+  font-family: 'Outfit', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 54.6px;
+  margin: 0 0 21px 0;
+}
+
+.locationCard {
+  display: flex;
+  gap: 14px;
+  padding: 22px;
+  border-radius: 21px;
+  border: 1px solid #E5E5E5;
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+
+.locationImage {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.locationImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.locationInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-top: 1.25px;
+}
+
+.locationBadge {
+  display: inline-flex;
+  padding: 2.75px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  background: #004080;
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  width: fit-content;
+}
+
+.locationAddress {
+  color: #404040;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 0;
+}
+
+.locationContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 2.5px;
+}
+
+.contactLink {
+  color: #004080;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.63px;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
+  color: #003366;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contactMapSection {
+    padding: 60px 40px;
+  }
+
+    .container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .formSection,
+  .mapSection {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactMapSection {
+    padding: 40px 14px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .formSection,
+  .mapSection {
+    width: 100%;
+  }
+
+  .formCard {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .input,
+  .textarea,
+  .select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .formTitle {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .locationsTitle {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .mapContainer {
+    min-height: 300px;
+    width: 100%;
+  }
+
+  .mapTitle {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .officeLocations {
+    width: 100%;
+  }
+
+  .locationCard {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .formTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  
+  .locationsTitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .locationCard {
+    padding: 16px;
+  }
+  
+  .mapContainer {
+    min-height: 250px;
+  }
+}

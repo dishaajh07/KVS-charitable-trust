@@ -4,7 +4,7 @@ import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
 import MissionVision from '@/components/sections/about-us/MissionVision';
 import JourneyOfHope from '@/components/sections/about-us/JourneyOfHope';
-
+import MeetOurHeart from '@/components/sections/about-us/MeetOurHeart';
 import JoinMission from '@/components/sections/about-us/JoinMission';
 import Footer from '../../components/layout/footer';
 
@@ -26,7 +26,7 @@ const page = () => {
       />
       <MissionVision />
       <JourneyOfHope />
-
+      <MeetOurHeart />
       <JoinMission />
       <Footer />
 

@@ -1,0 +1,205 @@
+.howToReachUs {
+  padding: 84px 0;
+  background: #FAFAFA;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.title {
+  color: #171717;
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: -0.525px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #404040;
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30.8px;
+  max-width: 672px;
+  margin: 0;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  border-radius: 28px;
+  border: 1px solid #E5E5E5;
+  background: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  gap: 14px;
+  min-height: 100%;
+}
+
+.iconSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.cardTitle {
+  color: #171717;
+  font-family: 'Outfit', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+  margin: 0;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  padding-bottom: 21px;
+  flex: 1;
+  align-items: center;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.cardText {
+  color: #404040;
+  font-family: 'Outfit', sans-serif;
+  font-size: 17.5px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin: 0;
+}
+
+.actionButton {
+  display: flex;
+  height: 31.5px;
+  padding: 7px 14px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  background: #004080;
+  border: none;
+  color: #FFF;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actionButton:hover {
+  background: #003366;
+}
+
+@media (max-width: 1200px) {
+  .cardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 14px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .howToReachUs {
+    padding: 60px 0;
+    width: 100%;
+  }
+
+  .cardsContainer {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .cardTitle {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .cardText {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .howToReachUs {
+    padding: 40px 0;
+  }
+  
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  
+  .cardTitle {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  
+  .icon {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

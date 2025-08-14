@@ -2,6 +2,8 @@
 import React from 'react'
 import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
+
+import GetInvolved from '@/components/sections/get-involved/GetInvolved';
 import Footer from '../../components/layout/footer';
 
 const page = () => {
@@ -19,6 +21,7 @@ const page = () => {
         { label: 'What We Do' },
       ]}
     />
+    <GetInvolved />
 <Footer />
 </div>
   )

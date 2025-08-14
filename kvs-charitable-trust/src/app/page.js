@@ -8,6 +8,7 @@ import Programs from '@/components/sections/home/Programs';
 import CoreValues from '@/components/sections/home/CoreValues';
 import Milestones from '@/components/sections/home/Milestones';
 import QuoteBlock from '@/components/sections/home/QuoteBlock';
+import Changemaker from '@/components/sections/get-involved/Changemaker';
 import Faqs from '@/components/sections/home/Faqs';
 import Footer from '../components/layout/footer';
 
@@ -23,6 +24,7 @@ export default function Home() {
 <CoreValues />
 <Milestones />
 <QuoteBlock />
+<Changemaker />
 <Faqs />
 <Footer />
     </div>
