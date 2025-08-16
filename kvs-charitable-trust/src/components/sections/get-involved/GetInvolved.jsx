@@ -51,7 +51,7 @@ function GetInvolvedSection() {
                   <span className={styles.tabIcon}>{tab.icon}</span>
                   <span className={styles.tabLabel}>{tab.label}</span>
                   {activeTab === tab.id && (
-                    <span className={styles.checkmark}>✓</span>
+                    <span className={styles.checkmark}></span>
                   )}
                 </button>
               ))}

@@ -2,6 +2,8 @@
 import React from 'react'
 import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
+
+import Programs from '../../components/sections/what-we-do/Programs';
 import Footer from '../../components/layout/footer';
 
 export default function whatWeDo() {
@@ -19,6 +21,21 @@ export default function whatWeDo() {
         { label: 'What We Do' },
       ]}
     />
+     <Programs
+        programTitle="Quality Education for Every Child"
+        programDescription="Comprehensive educational support from primary to higher secondary, including digital literacy, career guidance, and scholarship programs for deserving students."
+        studentsEnrolled="847"
+        totalReached="847"
+        schoolsSupported="12"
+        keyAchievements={[
+          '95% school completion rate',
+          'Career guidance for 200+ students',
+          'Digital learning centers in 12 villages',
+          'Scholarship support for 156 students'
+        ]}
+        supportLink="/support"
+        imageUrl="/images/image.png"
+      />
 <Footer />
     </main>
   );

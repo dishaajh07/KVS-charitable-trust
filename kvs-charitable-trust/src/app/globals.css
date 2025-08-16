@@ -61,6 +61,10 @@ body {
   overflow-x: hidden;
   font-family: 'Outfit', sans-serif;
 }
+::selection {
+  color: white;
+  background-color: #235AA6;
+}   
 
 body {
   background-color: var(--global-bg-5);

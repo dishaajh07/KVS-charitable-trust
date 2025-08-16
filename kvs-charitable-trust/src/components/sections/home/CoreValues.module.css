@@ -151,7 +151,7 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .valuesGrid {
     grid-template-columns: repeat(2, 1fr);
   }

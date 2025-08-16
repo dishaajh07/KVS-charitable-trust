@@ -3,109 +3,6 @@
   background: #fff;
 }
 
-/* Hero Section */
-.heroSection {
-  position: relative;
-  height: 576px;
-  display: flex;
-  align-items: center;
-  background: #1659F3;
-  overflow: hidden;
-}
-
-.heroBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('https://api.builder.io/api/v1/image/assets/TEMP/fe6a0260aa41a0e1ad699d6920a357f24357ec1f?width=3840') center/cover;
-}
-
-.heroOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.60) 50%, rgba(0, 0, 0, 0.50) 100%);
-}
-
-.heroContainer {
-  position: relative;
-  width: 100%;
-  padding: 40px 80px 0 80px;
-  z-index: 2;
-}
-
-.breadcrumb {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  margin-bottom: 40px;
-}
-
-.home {
-  color: rgba(255, 255, 255, 0.7);
-  font-family: 'Outfit', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17.5px;
-}
-
-.arrow {
-  width: 4px;
-  height: 8px;
-}
-
-.current {
-  color: #fff;
-  font-family: 'Outfit', sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 17.5px;
-  text-transform: capitalize;
-}
-
-.heroContent {
-  text-align: center;
-  max-width: 1050px;
-  margin: 0 auto;
-}
-
-.subtitle {
-  color: #F8B03C;
-  font-family: 'Outfit', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-  margin-bottom: 13px;
-  display: block;
-}
-
-.title {
-  color: #fff;
-  font-family: 'Outfit', sans-serif;
-  font-size: 62px;
-  font-weight: 700;
-  line-height: 78.75px;
-  letter-spacing: 1.575px;
-  margin-bottom: 12px;
-}
-
-.description {
-  color: rgba(255, 255, 255, 0.9);
-  font-family: 'Outfit', sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 34.13px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Tab Section */
 .tabSection {
   padding: 56px 0 98px 0;
   background: #F9FAFB;
@@ -181,7 +78,9 @@
   background: linear-gradient(110deg, #FF6B35 0%, #F7931E 100%);
   box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.15);
 }
-
+.tabButton.active:nth-child(2) {
+  background: var(--gradient-blue);
+}
 .tabIcon {
   font-size: 17.5px;
   line-height: 24.5px;
@@ -237,6 +136,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .tabTitle{
+    font-size: 46px;
+    line-height: 44px;
+  }
   .heroContainer {
     padding: 40px 14px 0 14px;
   }
@@ -253,25 +157,6 @@
   .description {
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .tabContainer {
-    padding: 0 14px;
-  }
-
-  .tabTitle {
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .tabButtons {
-    flex-direction: column;
-    gap: 8px;
-    align-items: stretch;
-  }
-
-  .tabButton {
-    justify-content: center;
   }
 
   .contentSection {
@@ -293,4 +178,26 @@
     font-size: 14px;
     line-height: 22px;
   }
+
+  .tabContainer {
+    padding: 0 14px;
+
+  }
+
+  .tabTitle {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .tabButtons {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+    border-radius: 30px;
+  }
+
+  .tabButton {
+  padding: 13px 100px 14px 100px;
+  }
+
 }

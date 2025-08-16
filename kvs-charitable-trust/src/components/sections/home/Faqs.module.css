@@ -18,7 +18,7 @@
 .item {
     background: #fff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  border-radius: 8px;
+  border-radius: 24px;
   margin-bottom: 8px;
 }
 
@@ -35,10 +35,6 @@
   align-items: center;
   cursor: pointer;
   transition: background 0.2s;
-}
-
-.question:hover {
-  background: #f9f9f9;
 }
 
 .answer {
@@ -63,6 +59,24 @@
   }
   .question {
     font-size: 1rem;
+    padding: 12px;
+  }
+  .answer {
+    font-size: 0.95rem;
+    padding: 0 12px 12px 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper {
+ max-width: 90vw;
+    padding: 32px 4px;
+  }
+  .heading {
+    font-size: 1rem;
+  }
+  .question {
+    font-size: 0.8rem;
     padding: 12px;
   }
   .answer {

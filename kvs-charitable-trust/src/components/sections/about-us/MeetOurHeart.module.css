@@ -53,7 +53,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  padding: 40px 20px;
+  padding: 40px 20px 20px 20px;
   border-radius: 21px;
   text-align: center;
   max-width: 400px;
@@ -64,15 +64,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
-}
-
-.memberImage {
-  width: 268.8px;
-  height: 268.8px;
-  border-radius: 50%;
-  border: 6.4px solid #fff;
-  box-shadow: 0 32px 48px -9.6px rgba(0, 0, 0, 0.10), 0 12.8px 19.2px -12.8px rgba(0, 0, 0, 0.10);
-  object-fit: cover;
 }
 
 .memberInfo {
@@ -154,12 +145,13 @@
   
   .memberCard {
     flex: none;
-    padding: 30px 15px;
+    padding: 20px 15px 0px 15px;
   }
   
-  .memberImage {
+   .memberImage {
     width: 200px;
     height: 200px;
+    margin-bottom: 0;
   }
   
   .memberName {

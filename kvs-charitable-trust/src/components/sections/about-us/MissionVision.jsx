@@ -19,23 +19,23 @@ function MissionVision() {
               <h3 className={styles.featuresTitle}>How we create lasting change:</h3>
               <ul className={styles.featuresList}>
                 <li className={styles.feature}>
-                  <span className={styles.bullet}>•</span>
+                  <span className={styles.bullet}>🎯</span>
                   Comprehensive nutrition programs ensuring no child goes hungry
                 </li>
                 <li className={styles.feature}>
-                  <span className={styles.bullet}>•</span>
+                  <span className={styles.bullet}>🎯</span>
                   Quality education that opens doors to brighter futures
                 </li>
                 <li className={styles.feature}>
-                  <span className={styles.bullet}>•</span>
+                  <span className={styles.bullet}>🎯</span>
                   Accessible healthcare bringing wellness to every doorstep
                 </li>
                 <li className={styles.feature}>
-                  <span className={styles.bullet}>•</span>
+                  <span className={styles.bullet}>🎯</span>
                   Safe shelter providing security and peace of mind
                 </li>
                 <li className={styles.feature}>
-                  <span className={styles.bullet}>•</span>
+                  <span className={styles.bullet}>🎯</span>
                   Essential clothing ensuring dignity in every season
                 </li>
               </ul>
@@ -44,7 +44,7 @@ function MissionVision() {
 
           <div className={styles.visionCard}>
             <div className={styles.cardHeader}>
-              <div className={styles.icon}>🌟</div>
+              <div className={styles.icon}>💫</div>
             </div>
             <h2 className={styles.cardTitle}>Our vision</h2>
             <p className={styles.cardDescription}>

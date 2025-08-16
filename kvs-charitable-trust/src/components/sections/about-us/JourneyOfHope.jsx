@@ -22,7 +22,7 @@ function JourneyOfHope() {
     {
       year: "2020",
       description: "Complete community transformation achieved",
-      color: "#EAEAEA"
+      color: "#FF66B2"
     }
   ];
 

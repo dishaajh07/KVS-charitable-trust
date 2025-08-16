@@ -22,10 +22,6 @@ const faqs = [
     question: "What does KVS Charitable Trust do?",
     answer: "We support underserved individuals through food, education, health, and hygiene services."
   },
-  {
-    question: "How can I donate?",
-    answer: "Click the 'Donate Now' button or contact us for more ways to help."
-  },
 ];
 
 const Faqs = () => {

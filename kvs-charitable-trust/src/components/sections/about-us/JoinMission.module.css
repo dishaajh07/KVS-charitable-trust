@@ -34,15 +34,7 @@
   height: 350px;
 }
 
-@media (max-width: 600px) {
-    .callToAction {
-    padding: 60px 48px 370px 48px;
-}
-  .peekComponent {
-    height: 600px;
-    margin-top: -24px;
-  }
-}
+
 
 @media (max-width: 1200px) {
     .callToAction {
@@ -50,6 +42,16 @@
 }
   .peekComponent {
     height: 400px;
+    margin-top: -24px;
+  }
+}
+
+@media (max-width: 600px) {
+    .callToAction {
+    padding: 60px 48px 370px 48px;
+}
+  .peekComponent {
+    height: 600px;
     margin-top: -24px;
   }
 }

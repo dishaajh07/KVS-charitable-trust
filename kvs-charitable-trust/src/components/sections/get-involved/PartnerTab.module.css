@@ -8,7 +8,7 @@
 
 .formSection {
   flex: 1;
-  max-width: 600px;
+  max-width: 100vw;
 }
 
 .partnerForm {
@@ -195,28 +195,62 @@
     flex-direction: column;
     gap: 40px;
   }
+
+  .formSection {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .typesSection {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
+
   .formTitle,
   .typesTitle {
     font-size: 32px;
     line-height: 40px;
   }
-  
+
   .partnerForm {
-    padding: 24px;
+    padding: 24px 18px;
+  }
+
+  .formSection {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .typesSection {
+    padding: 24px 8px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 480px) {
+
   .formTitle,
   .typesTitle {
     font-size: 28px;
     line-height: 36px;
   }
-  
+
   .partnerForm {
-    padding: 20px;
+    padding: 24px 12px;
+  }
+
+  .formSection {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .typesSection {
+    padding: 24px 8px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
