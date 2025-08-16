@@ -1,14 +1,40 @@
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+}
+
+.title {
+  font-size: 56px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #FFCE00 0%, #FF4F81 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
 .donateTab {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 56px;
   width: 100%;
+  padding: 20px 80px 80px 80px;
 }
 
 .formSection {
   flex: 1;
-  max-width: 849px;
+  max-width: 90vw;
+
 }
 
 .donationForm {
@@ -20,6 +46,8 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 100vw;
+  margin: 0 auto;
 }
 
 .formTitle {
@@ -47,7 +75,7 @@
 
 .amountButton {
   width: 248px;
-  padding: 16px 100px;
+  padding: 16px 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +281,7 @@
 
 .impactSection {
   flex: 1;
-  max-width: 855px;
+  max-width: 955px;
 }
 
 .impactCard {
@@ -359,20 +387,40 @@
 }
 
 /* Mobile Styles */
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
   .donateTab {
     flex-direction: column;
     gap: 40px;
   }
-  
+
+  .formSection,
+  .impactSection {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
   .amountGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
-  
+
   .amountButton {
-    width: 100%;
-    padding: 16px;
+    width: 160px;
+    padding: 16px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    border: 2px solid #E5E7EB;
+    background: #fff;
+    color: #364153;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
 }
 
@@ -381,29 +429,73 @@
     font-size: 32px;
     line-height: 40px;
   }
-  
+
+  .donationForm {
+    padding: 25px 18px;
+  }
+
   .formRow {
     flex-direction: column;
   }
-  
+
+  .formSection,
+  .impactSection {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
   .amountGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
-  
+
   .statsContainer {
     flex-direction: column;
     gap: 10px;
   }
+
+  .statCard {
+    width: 100%;
+  }
+
+  .impactContent {
+    padding: 30px 9px;
+  }
+
+  .impactCard {
+    padding: 9px;
+  }
 }
 
 @media (max-width: 480px) {
+  .donationForm {
+    padding: 25px 14px;
+  }
+
   .formTitle {
     font-size: 28px;
     line-height: 36px;
   }
-  
+
   .amountGrid {
     grid-template-columns: 1fr;
+  }
+
+  .amountButton {
+    width: 30px;
+    padding: 16px 40px;
+  }
+
+  .statCard {
+    width: 100%;
+  }
+
+  .impactCard {
+    padding: 3px;
+  }
+
+  .impactContent {
+    padding: 30px 9px;
   }
 }

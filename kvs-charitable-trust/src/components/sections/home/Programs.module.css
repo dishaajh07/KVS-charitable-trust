@@ -192,7 +192,7 @@
   .programsGrid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .additionalPrograms {
     grid-template-columns: repeat(2, 1fr);
   }

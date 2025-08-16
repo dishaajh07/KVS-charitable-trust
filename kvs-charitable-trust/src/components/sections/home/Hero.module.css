@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 85vh;
+  height: 89vh;
   overflow: hidden;
   color: white;
   text-align: center;
@@ -58,23 +58,6 @@
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-}
-
-.gradientButton {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  background: var(--gradient-primary, linear-gradient(180deg, #ffb347, #b4002d));
-  color: white;
-  font-weight: bold;
-  padding: 12px 24px;
-  border-radius: 40px;
-  text-decoration: none;
-  transition: transform 0.2s ease;
-}
-
-.gradientButton:hover {
-  transform: translateY(-2px);
 }
 
 .icon {

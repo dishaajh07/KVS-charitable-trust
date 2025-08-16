@@ -1,11 +1,13 @@
 .wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 60px 80px;
-  gap: 40px;
+  gap: 220px;
   flex-wrap: wrap;
   background-color: white;
+  max-width: 1700px;
+  margin: 0 auto;
 }
 
 .textContent {
@@ -25,6 +27,7 @@
   color: #333;
   line-height: 1.6;
   margin-bottom: 24px;
+  justify-content: center;
 }
 
 .buttons {
@@ -32,9 +35,10 @@
   gap: 16px;
   flex-wrap: wrap;
 }
+
 .imageWrapper {
   flex: 1;
-  max-width: 400px;
+  max-width: 600px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -49,11 +53,56 @@
   object-fit: cover;
 }
 
-@media (max-width: 600px) {
-  .button,
-  .medium,
-  .large {
-    font-size: 0.85rem !important;
-    padding: 0.3rem 1rem !important;
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 60px 80px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: white;
+    max-width: 1700px;
+    margin: 0 auto;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .imageWrapper {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 16px;
+  }
+
+  .textContent {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .heading {
+    order: 2;
+  }
+
+  .imageWrapper {
+    max-width: 400px;
+    width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons {
+    order: 3;
+    justify-content: center;
   }
 }

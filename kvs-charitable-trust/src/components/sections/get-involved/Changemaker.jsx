@@ -38,9 +38,18 @@ function Changemaker() {
   };
 
   return (
+<div>
+ <div className={styles.header}>
+
+          <h2 className={styles.title}>Be A Changemaker</h2>
+          <p className={styles.subtitle}>
+            Join our circle of hope. Whether through donations, volunteering, or spreading awareness—you are the reason change happens.
+          </p>
+        </div>
     <div className={styles.donateTab}>
-      <div className={styles.formSection}>
+<div className={styles.formSection}>
         <div className={styles.donationForm}>
+
           <h3 className={styles.formTitle}>Choose Your Donation Amount</h3>
           
           <div className={styles.amountSelection}>
@@ -176,6 +185,7 @@ function Changemaker() {
         </div>
       </div>
     </div>
+</div>
   );
 }
 
