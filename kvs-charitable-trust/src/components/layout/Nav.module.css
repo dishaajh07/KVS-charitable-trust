@@ -371,3 +371,24 @@
   }
 
 }
+
+
+@media (max-width: 350px) {
+  .logoWrapper {
+    width: 60px;
+    height: 50px;
+  }
+
+  .header {
+    padding: 12px 8px;
+  }
+
+  .mobileControls {
+    gap: 8px;
+  }
+
+  .burger img {
+    width: 20px;
+    height: 20px;
+  }
+}

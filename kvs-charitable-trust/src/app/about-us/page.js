@@ -5,8 +5,9 @@ import Banner from '../../components/sections/what-we-do/Banner';
 import MissionVision from '@/components/sections/about-us/MissionVision';
 import JourneyOfHope from '@/components/sections/about-us/JourneyOfHope';
 import MeetOurHeart from '@/components/sections/about-us/MeetOurHeart';
-import JoinMission from '@/components/sections/about-us/JoinMission';
+import SupportPrograms from '@/components/sections/about-us/SupportPrograms';
 import Footer from '../../components/layout/footer';
+import YouTubeVideo from '@/components/sections/about-us/YoutubeVideo';
 
 
 const page = () => {
@@ -26,8 +27,9 @@ const page = () => {
       />
       <MissionVision />
       <JourneyOfHope />
+      <YouTubeVideo />
       <MeetOurHeart />
-      <JoinMission />
+      <SupportPrograms />
       <Footer />
 
 

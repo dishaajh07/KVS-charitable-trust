@@ -1,5 +1,5 @@
 .howToReachUs {
-  padding: 84px 0;
+  padding: 84px 0 0 0;
   background: #FAFAFA;
 }
 
@@ -15,6 +15,7 @@
 .headerContent {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   text-align: center;
@@ -78,7 +79,7 @@
   font-weight: 700;
   line-height: 34px;
   text-align: center;
-  margin: 0;
+  margin: 10px 0;
 }
 
 .cardContent {

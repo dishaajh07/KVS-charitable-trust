@@ -10,6 +10,7 @@ import Milestones from '@/components/sections/home/Milestones';
 import QuoteBlock from '@/components/sections/home/QuoteBlock';
 import Changemaker from '@/components/sections/get-involved/Changemaker';
 import Faqs from '@/components/sections/home/Faqs';
+import BlogsDisplay from '@/components/sections/home/BlogsDisplay';
 import Footer from '../components/layout/footer';
 
 export default function Home() {
@@ -19,13 +20,13 @@ export default function Home() {
 <div className="headerSpacer"></div>
 <Hero />
 <WhatWeDo />
-
 <Programs />
 <CoreValues />
 <Milestones />
 <QuoteBlock />
 <Changemaker />
 <Faqs />
+<BlogsDisplay />
 <Footer />
     </div>
   );

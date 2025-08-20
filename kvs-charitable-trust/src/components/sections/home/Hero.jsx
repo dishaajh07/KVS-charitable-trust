@@ -35,15 +35,13 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className={styles.buttons}>
-        <GradientButton text="Donate now" icon="❤️" />
+          <GradientButton text="Donate now" icon="❤️" />
 
-          <a
-            href="/contact"
-            className={styles.outlinedButton}
-            aria-label="Contact us"
-          >
-            Learn Our Story →
-          </a>
+          <button
+            href="/about-us"
+            className={styles.secondaryButton}>
+            Learn our story →
+          </button>
         </div>
       </div>
 

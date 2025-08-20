@@ -190,7 +190,7 @@
 /* Mobile Styles */
 @media (max-width: 1612px) {
   .programsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .additionalPrograms {
@@ -198,7 +198,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
   .programsGrid {
     grid-template-columns: 1fr;
   }

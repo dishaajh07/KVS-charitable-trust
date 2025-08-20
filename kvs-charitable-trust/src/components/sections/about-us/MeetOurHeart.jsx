@@ -4,21 +4,21 @@ import styles from './MeetOurHeart.module.css';
 function MeetOurHeart() {
   const teamMembers = [
     {
-      name: "Md Shafqatullah",
+      name: "lorem ipsum",
       role: "Founder & Chairman",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/1039cee8dba78b492fc420bc9d3b5c0df7fc37b0?width=538",
+      image: "/images/image.png",
       description: "With 17+ years of unwavering dedication, Rajesh has touched over 10,000 lives across rural Bangalore, turning his vision of equal opportunity into reality."
     },
     {
-      name: "Md Shafqatullah",
+      name: "lorem ipsum",
       role: "Founder & Chairman",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/1039cee8dba78b492fc420bc9d3b5c0df7fc37b0?width=538",
+      image: "/images/image.png",
       description: "With 17+ years of unwavering dedication, Rajesh has touched over 10,000 lives across rural Bangalore, turning his vision of equal opportunity into reality."
     },
     {
-      name: "Md Shafqatullah",
+      name: "lorem ipsum",
       role: "Founder & Chairman",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/1039cee8dba78b492fc420bc9d3b5c0df7fc37b0?width=538",
+      image: "/images/image.png",
       description: "With 17+ years of unwavering dedication, Rajesh has touched over 10,000 lives across rural Bangalore, turning his vision of equal opportunity into reality."
     }
   ];

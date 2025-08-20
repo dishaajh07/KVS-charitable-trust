@@ -1,0 +1,240 @@
+.areasOfImpact {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+  padding: 84px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: -0.525px;
+  color: #171717;
+  text-align: center;
+  margin: 0;
+}
+
+.subtitle {
+  color: #404040;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  max-width: 672px;
+  margin: 0;
+}
+
+.reelsContainer {
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reelsTrack {
+  display: flex;
+  gap: 20px;
+  animation: scrollReels 30s linear infinite;
+  width: max-content;
+}
+
+.reelsTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollReels {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reelCard {
+  width: 280px;
+  height: 480px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.reelCard:hover {
+  transform: translateY(-5px);
+}
+
+.videoContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.reelVideo,
+.fallbackImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.reelOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.reelCard:hover .reelOverlay {
+  opacity: 1;
+}
+
+.playIcon {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.reelTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gradientOverlay {
+  width: 100%;
+  height: 256px;
+  background: linear-gradient(180deg, rgba(47, 127, 237, 0.00) 16.71%, #2F7FED 72%, #2F7FED 91.77%);
+  margin-top: -200px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    padding: 60px 0 0 0;
+  }
+  
+  .reelsContainer {
+    height: 420px;
+  }
+  
+  .reelCard {
+    width: 240px;
+    height: 380px;
+  }
+  
+  .gradientOverlay {
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 60px 0 0 0;
+  }
+  
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .reelsContainer {
+    height: 350px;
+  }
+  
+  .reelsTrack {
+    gap: 16px;
+  }
+  
+  .reelCard {
+    width: 200px;
+    height: 320px;
+  }
+  
+  .playIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .reelTitle {
+    font-size: 14px;
+    padding: 30px 16px 16px;
+  }
+  
+  .gradientOverlay {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reelsContainer {
+    height: 280px;
+  }
+  
+  .reelCard {
+    width: 160px;
+    height: 250px;
+  }
+  
+  .reelsTrack {
+    gap: 12px;
+  }
+  
+  .playIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .playIcon svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .reelTitle {
+    font-size: 12px;
+    padding: 20px 12px 12px;
+  }
+}

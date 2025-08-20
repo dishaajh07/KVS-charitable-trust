@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import Nav from '../../components/layout/Nav';
-import Faq from "./Faq";
 import Footer from '../../components/layout/footer';
+import Volunteer from "./Volunteer";
 
 export default function whatWeDo() {
     return (
         <main>
             <Nav />
-            <Faq />
+            <Volunteer />
             <Footer />
         </main>
     );

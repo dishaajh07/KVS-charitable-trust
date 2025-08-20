@@ -1,0 +1,111 @@
+.supportPrograms {
+  background: linear-gradient(180deg, #2F7FED 0.13%, #235AA6 100.04%);
+  padding: 80px 42px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 53px;
+  font-weight: 700;
+  line-height: 63px;
+  letter-spacing: -0.525px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30.8px;
+  max-width: 672px;
+  margin: 0;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.primaryButton {
+  display: flex;
+  padding: 16px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10.5px;
+  border-radius: 50px;
+  background: #F5F5F5;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10), 0 4px 6px -4px rgba(0, 0, 0, 0.10);
+  border: none;
+  cursor: pointer;
+  color: #004080;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24.5px;
+  transition: all 0.3s ease;
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px -3px rgba(0, 0, 0, 0.15), 0 8px 12px -4px rgba(0, 0, 0, 0.15);
+}
+
+.secondaryButton {
+  display: flex;
+  padding: 16px 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24.5px;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .supportPrograms {
+    padding: 80px 14px;
+  }
+  
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+  }
+  
+  .buttonContainer {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+  
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    max-width: 280px;
+  }
+}

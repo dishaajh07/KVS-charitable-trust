@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
 import Nav from '../../components/layout/Nav';
-import Faq from "./Faq";
+
 import Footer from '../../components/layout/footer';
+import CookiePolicy from "./CookiePolicy";
 
 export default function whatWeDo() {
     return (
         <main>
             <Nav />
-            <Faq />
+            <CookiePolicy />
             <Footer />
         </main>
     );

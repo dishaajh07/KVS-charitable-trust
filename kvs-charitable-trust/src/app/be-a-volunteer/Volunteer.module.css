@@ -1,0 +1,326 @@
+.volunteerPage {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+  margin: 50px 0 2px;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 3.3rem;
+  font-weight: 700;
+  color: #d9d9d9;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  line-height: 1.25;
+}
+
+.subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Why Volunteer Section */
+.whyVolunteer {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.sectionTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 0 0 60px;
+  line-height: 1.25;
+}
+
+.reasonsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.reasonCard {
+  text-align: center;
+}
+
+.reasonIcon {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #2f7fed, #235aa6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin: 0 auto 20px;
+}
+
+.reasonTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 15px;
+  line-height: 1.4;
+}
+
+.reasonText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Opportunities Section */
+.opportunities {
+  padding: 80px 0;
+}
+
+.opportunitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.opportunityCard {
+  background: #fff;
+  padding: 30px;
+  border-radius: 21px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.opportunityCard:hover {
+  transform: translateY(-5px);
+}
+
+.opportunityIcon {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.opportunityTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 15px;
+  line-height: 1.4;
+}
+
+.opportunityText {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.timeCommitment {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #2f7fed, #235aa6);
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 50px;
+  line-height: 1.2;
+}
+
+/* Application Form Section */
+.applicationForm {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.formWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 21px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin: 0 0 30px;
+  line-height: 1.25;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+  background: #f9f9f9;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.875rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #2f7fed;
+  background: #fff;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #bdbdbd;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.submitButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #2f7fed, #235aa6);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  align-self: center;
+  min-width: 200px;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+}
+
+.submitButton svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .reasonsGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .opportunitiesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .opportunityCard {
+    padding: 25px;
+  }
+  
+  .timeCommitment {
+    position: static;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  
+  .formWrapper {
+    padding: 30px 20px;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .formTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .opportunityCard {
+    padding: 20px;
+  }
+  
+  .formWrapper {
+    padding: 25px 15px;
+  }
+}

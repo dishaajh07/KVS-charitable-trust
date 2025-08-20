@@ -39,17 +39,9 @@ const WhatWeDo = () => {
  
         <div className={styles.buttons}>
           <GradientButton text="Donate Now" icon="💛" />
-          <OutlinedButton
-            size="large"
-            borderRadius="50px"
-            width="250px"
-            gradient="white"
-            outlineColor="var(--congress-blue)"
-            showOutline={true}
-            textColor="black"
-          >
-            More about us
-          </OutlinedButton>
+          <a href="/about" className={styles.aboutBtn}>
+                More about us
+              </a>
         </div>
       </div>
       {!isMobile && (

@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "The Importance of Charity 🌍❤️",
+    "content": [
+      {
+        "type": "image",
+        "src": "https://source.unsplash.com/800x400/?charity,helping-hands",
+        "alt": "Helping Hands"
+      },
+      {
+        "type": "text",
+        "value": "Charity has been an integral part of human society for centuries. It is the **act of giving without expecting anything in return**. Whether it’s donating money, time, or skills, charity has the power to change lives."
+      },
+      {
+        "type": "heading",
+        "value": "🌱 Why Charity Matters"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "title": "Reduces Poverty",
+            "text": "By supporting charitable organizations, we help provide food, shelter, and healthcare to those in need.",
+            "image": "https://source.unsplash.com/600x300/?donation,food"
+          },
+          {
+            "title": "Creates Equal Opportunities",
+            "text": "Education programs supported by charity give underprivileged children the chance to build a better future.",
+            "image": "https://source.unsplash.com/600x300/?education,children"
+          },
+          {
+            "title": "Improves Community Health",
+            "text": "Healthcare camps and donations provide medical assistance to vulnerable groups.",
+            "image": "https://source.unsplash.com/600x300/?healthcare,doctor"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "value": "🌍 Charity Strengthens Society"
+      },
+      {
+        "type": "quote",
+        "value": "“We rise by lifting others.” – Robert Ingersoll"
+      },
+      {
+        "type": "heading",
+        "value": "🤝 How You Can Contribute"
+      },
+      {
+        "type": "bullets",
+        "items": [
+          "Donate to verified organizations",
+          "Volunteer your time for a cause",
+          "Spread awareness about social issues",
+          "Offer your skills to NGOs"
+        ]
+      },
+      {
+        "type": "image",
+        "src": "https://source.unsplash.com/600x300/?volunteer,community",
+        "alt": "Volunteering"
+      },
+      {
+        "type": "heading",
+        "value": "💡 Final Thoughts"
+      },
+      {
+        "type": "text",
+        "value": "Charity is not only about giving money—it’s about **sharing love, kindness, and humanity**. Each small act of generosity creates ripples of change that make the world a better place."
+      },
+      {
+        "type": "text",
+        "value": "✨ Start today. Your small contribution can create a big impact."
+      }
+    ]
+  }
+]

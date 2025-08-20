@@ -2,8 +2,8 @@
 import React from 'react'
 import Nav from '../../components/layout/Nav';
 import Banner from '../../components/sections/what-we-do/Banner';
-import ArticleCard from '@/components/sections/blogs/ArticleCard';
 import Footer from '../../components/layout/footer';
+import BlogsDisplay from '@/components/sections/home/BlogsDisplay';
 
 const page = () => {
   return (
@@ -19,7 +19,7 @@ const page = () => {
         { label: 'What We Do' },
       ]}
     />
-    <ArticleCard />
+    <BlogsDisplay />
 <Footer /></div>
   )
 }

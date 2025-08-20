@@ -53,6 +53,22 @@
   object-fit: cover;
 }
 
+.aboutBtn {
+  border: 2px solid #004080;
+  background: white;
+  color: #333;
+  padding: 16px 32px;
+  border-radius: 44px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.aboutBtn:hover {
+  background: #004080;
+  color: white;
+}
+
 @media (max-width: 1200px) {
   .wrapper {
     padding: 60px 80px;
@@ -70,6 +86,14 @@
   .imageWrapper {
     max-width: 800px;
   }
+
+  .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}             
 }
 
 @media (max-width: 1050px) {
