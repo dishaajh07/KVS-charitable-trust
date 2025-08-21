@@ -1,3 +1,4 @@
+"use client"
 import styles from './Footer.module.css';
 import commonData from '@/locales/english/commonData.json';
 import commonPath from '@/data/commonPath.js';

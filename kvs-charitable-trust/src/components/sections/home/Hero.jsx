@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import styles from "./Hero.module.css";
 import GradientButton from "../../elements/GradientButton";
 
@@ -15,7 +16,7 @@ const Hero = () => {
         playsInline
         aria-hidden="true"
       >
-        <source src="./images/image.png" type="video/mp4" />
+        <source src="./images/hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -37,11 +38,11 @@ const Hero = () => {
         <div className={styles.buttons}>
           <GradientButton text="Donate now" icon="❤️" />
 
-          <button
-            href="/about-us"
+          <Link
+            href="/about-us/#journey-of-hope"
             className={styles.secondaryButton}>
             Learn our story →
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import styles from './Changemaker.module.css';
 
@@ -11,7 +12,7 @@ function Changemaker() {
     message: ''
   });
 
-  const predefinedAmounts = ['500', '1,000', '2,500', '5,000', '10,000'];
+  const predefinedAmounts = ['500', '1,000', '2,000'];
 
   const handleAmountSelect = (amount) => {
     setSelectedAmount(amount);
@@ -38,7 +39,7 @@ function Changemaker() {
   };
 
   return (
-<div>
+<div className={styles.formContainer}>
  <div className={styles.header}>
 
           <h2 className={styles.title}>Be A Changemaker</h2>
@@ -79,12 +80,12 @@ function Changemaker() {
               </div>
             </div>
             
-            <button 
+            {/* <button 
               className={`${styles.selectButton} ${(selectedAmount || customAmount) ? styles.enabled : ''}`}
               disabled={!selectedAmount && !customAmount}
             >
               Select amount to donate
-            </button>
+            </button> */}
           </div>
 
           <div className={styles.donorDetails}>

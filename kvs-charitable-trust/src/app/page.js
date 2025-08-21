@@ -12,6 +12,7 @@ import Changemaker from '@/components/sections/get-involved/Changemaker';
 import Faqs from '@/components/sections/home/Faqs';
 import BlogsDisplay from '@/components/sections/home/BlogsDisplay';
 import Footer from '../components/layout/footer';
+import Community from '@/components/sections/home/Community';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
 <Milestones />
 <QuoteBlock />
 <Changemaker />
+<Community />
 <Faqs />
 <BlogsDisplay />
 <Footer />

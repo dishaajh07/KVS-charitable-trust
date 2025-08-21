@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Outfit } from 'next/font/google';
+import LoaderContainer from "./LoaderContainer";
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={outfit.className}>
-        {children}
+        <LoaderContainer>{children}</LoaderContainer>
       </body>
     </html>
   );

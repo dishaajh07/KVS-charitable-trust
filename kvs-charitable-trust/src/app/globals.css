@@ -55,34 +55,41 @@
   margin: 0;
 }
 
-html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Outfit', sans-serif;
+  
 }
+
+html, body {
+  overflow-x: hidden;
+  min-width: 320px; 
+}
+html {
+  scroll-behavior: smooth;
+}
+
 ::selection {
   color: white;
   background-color: #235AA6;
-}   
+}
 
 body {
   background-color: var(--global-bg-5);
   color: var(--global-text-3);
 }
 
-/* Utility Classes */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
+  width: 100%;  
 }
 
 .headerSpacer {
   height: 80px;
 }
-
-
 
 .gradient-text {
   background: var(--gradient-primary);

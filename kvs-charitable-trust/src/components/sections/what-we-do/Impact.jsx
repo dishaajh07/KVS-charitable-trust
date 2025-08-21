@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import styles from './Impact.module.css';
 
@@ -5,23 +6,23 @@ function Impact() {
   const impactVideos = [
     {
       title: 'Education Program',
-      video: '/Video-948.mp4'
+      video: '/images/hero-video.mp4'
     },
     {
       title: 'Healthcare Initiative',
-      video: '/Video-948.mp4'
+      video: '/images/hero-video.mp4'
     },
     {
       title: 'Nutrition Support',
-      video: '/Video-948.mp4'
+      video: '/images/hero-video.mp4'
     },
     {
       title: 'Shelter Development',
-      video: '/Video-948.mp4'
+      video: '/images/hero-video.mp4'
     },
     {
       title: 'Community Empowerment',
-      video: '/Video-948.mp4'
+      video: '/images/hero-video.mp4'
     },
   ];
 

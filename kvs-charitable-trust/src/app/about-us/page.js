@@ -30,9 +30,9 @@ const page = () => {
       <YouTubeVideo />
       <MeetOurHeart />
       <SupportPrograms />
-      <Footer />
-
-
+      <div style={{ backgroundColor: "#245b87" }}>
+        <Footer />
+      </div>
     </div>
   )
 }

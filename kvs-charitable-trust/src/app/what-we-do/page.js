@@ -11,7 +11,7 @@ import SupportPrograms from '@/components/sections/about-us/SupportPrograms';
 import Footer from '../../components/layout/footer';
 
 export default function whatWeDo() {
- const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 1200);
@@ -21,7 +21,7 @@ export default function whatWeDo() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-const programs = [
+  const programs = [
     {
       id: 'education',
       programNumber: '1',
@@ -142,20 +142,20 @@ const programs = [
 
   return (
     <main>
-<Nav />
-<div className="headerSpacer"></div>
-        <Banner
-      title="What We Do"
-      subtitle="Our Programs"
-      description="Our comprehensive programs addressing the core needs of rural Bangalore communities through holistic approaches that transform lives, strengthen families, and build sustainable futures for entire communities."
-      backgroundImage={'/images/image.png'}
-      breadcrumb={[
-        { label: 'Home', link: '/' },
-        { label: 'What We Do' },
-      ]}
-    />
-   <ProgramsOverview />
-    {programs.map((program) =>
+      <Nav />
+      <div className="headerSpacer"></div>
+      <Banner
+        title="What We Do"
+        subtitle="Our Programs"
+        description="Our comprehensive programs addressing the core needs of rural Bangalore communities through holistic approaches that transform lives, strengthen families, and build sustainable futures for entire communities."
+        backgroundImage={'/images/image.png'}
+        breadcrumb={[
+          { label: 'Home', link: '/' },
+          { label: 'What We Do' },
+        ]}
+      />
+      <ProgramsOverview />
+      {programs.map((program) =>
         isMobile ? (
           <ProgramSectionMobile key={program.id} program={program} />
         ) : (
@@ -165,7 +165,10 @@ const programs = [
       <SpecialInitiatives />
       <Impact />
       <SupportPrograms />
-<Footer />
+      <div style={{ backgroundColor: "#245b87" }}>
+  <Footer />
+</div>
+      
     </main>
   );
 }

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import DonateTab from './DonateTab';
 import VolunteerTab from './VolunteerTab';
@@ -27,7 +28,7 @@ function GetInvolvedSection() {
   };
 
   return (
-    <section className={styles.getInvolvedSection}>
+    <section className={styles.getInvolvedSection} id="donate-tab">
 
       {/* Tab Section */}
       <div className={styles.tabSection}>

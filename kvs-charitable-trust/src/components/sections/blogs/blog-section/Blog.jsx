@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import blogs from "../blog-data/importance-of-charity.json";
 import styles from "./Blog.module.css";

@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f8b03c94;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 600px) {
+.image {
+  width: 100px;
+  height: 100px;
+}
+}

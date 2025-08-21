@@ -27,7 +27,7 @@ function JourneyOfHope() {
   ];
 
   return (
-    <section className={styles.journeyOfHope}>
+    <section className={styles.journeyOfHope} id="journey-of-hope">
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.textSection}>

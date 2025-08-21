@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useRef } from "react";
 import styles from "./LanguageSelector.module.css";
 import { useClickOutside } from "@/components/elements/useClickOutside"
